@@ -9,6 +9,7 @@ header
     background:'#03a9f4';
     text-align: center;
     background-color: rgb(224, 178, 52);
+    padding-bottom: 20px;
 }
 
 .logo
@@ -23,10 +24,4 @@ header input
 {
     font-size: 20px;
     margin: 20px 0;
-}
-
-
-.texthere
-{
-    
 }
