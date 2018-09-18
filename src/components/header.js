@@ -1,14 +1,14 @@
 import React, {Component} from 'react'
 class Header extends Component{
 state = {
-    keywords: "Fookin cunt!",
+    keywords: "Default text goes here!",
 }
 
     render(){
 
         return(<header> 
                     <div className='logo'>Logo</div>
-                    <input onChange={(e) => this.inputChangeHandler(e)} type='text'/>
+                    <input onChange={this.inputChangeHandler.bind(this)} type='text'/>
                     <div id='texthere'>{this.state.keywords}</div>
                     
                 </header>
@@ -20,7 +20,6 @@ state = {
                 keywords: event.target.value
             })
             document.getElementById('texthere').innerHTML = this.state.keywords
-            // document.getElementById('texthere').innerHTML = (event.target.value);
         }
 }
 
