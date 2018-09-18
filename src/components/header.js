@@ -8,13 +8,13 @@ state = {
 
         return(<header> 
                     <div className='logo'>Logo</div>
-                    <input onChange={this.inputChangeHandler.bind(this)} type='text'/>
+                    <input onChange={this.inputChangeHandler} type='text'/>
                     <div id='texthere'>{this.state.keywords}</div>
                     
                 </header>
             )}
 
-    inputChangeHandler(event)
+    inputChangeHandler = (event) =>
         {
             this.setState({
                 keywords: event.target.value
